@@ -1,0 +1,169 @@
+:root {
+    --primary-color:#4332F0;
+    --box1-color:#FFF6F5;
+    --box2-color:#FFFBF2;
+    --box3-color:#F2FBFA;
+    --box4-color:#F3F3FD;
+    --buttom-hovor:#303B59;
+
+
+}
+* {
+    font-family:"hostfont";
+}
+@font-face {
+    font-family: "hostfont";
+    src: url(../fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+/*scores but not in detail*/
+.grid-container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    position: absolute;
+  top: 20%;
+  left: 20%;
+    border-radius: 20px;
+    border: 1px solid rgb(251, 251, 251);
+    height: 400px;
+    width: 600px;
+    box-shadow: 1px 1px 24px 4px rgba(56,81,120,0.27);
+-webkit-box-shadow: 1px 1px 24px 4px rgba(56,81,120,0.27);
+-moz-box-shadow: 1px 1px 24px 4px rgba(56,81,120,0.27);
+}
+.grid-results {
+    border: 1px solid --primary-color;
+    height:400px ;
+    width: 300px;
+    border-radius: 20px;
+    background: rgb(115,106,255);
+background: linear-gradient(180deg, rgba(115,106,255,1) 1%, rgba(58,46,254,1) 55%);
+    text-align: center;
+    
+}
+#header {
+    color: #CCC6FF;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+.result-circle {
+    border: 1px solid --primary-color;
+    height: 140px;
+    width: 140px;
+    margin: 10% 27%;
+    border-radius: 50%;
+    color: white;
+    background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+}
+#score {
+    font-size: 50px; 
+    padding: 30px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+#underscore {
+    margin: 0;
+    font-size: 14px;
+    color: hsl(241, 48%, 71%);
+    font-weight: 500;
+}
+.great{
+    padding: bottom 20px; ;
+}
+/*pay attention to the 100 of */
+
+h3{
+    color: #F3F3FD;
+    font-size: 23px;
+    margin-bottom: 0;
+}
+.congrat-text{
+    font-size: 15px;
+    line-height: 18px;
+    color: rgb(164, 161, 164);
+}
+/*detailed result part*/
+/*general settings*/
+#Summery {
+    color: black;
+    font-size: 18px;
+    padding-left: 20px;
+    font-weight: 500;
+}
+.box {
+    margin-left: 23px;
+    margin-top: 15px;
+    border-radius: 7px;
+    height: 47px;
+    width: 250px;
+    
+}
+.icon {
+    padding: 14px 14px;
+    padding-right: 2px;
+    height: 17px;
+    vertical-align: middle;
+    line-height: 1px;
+}
+.words {
+    display: contents;
+    font-size: 14px;
+    position: relative;
+    font-weight: 600;
+    padding: 0;
+}
+
+.detailed-result {  
+    font-size: 14px;
+    display: contents;
+    
+}
+.score {
+    font-weight: bold;
+    color: black;
+}
+.persentage {
+    color: gray;
+    font-weight: bold;
+}
+/*Reaction box settings*/
+.box-1 {
+    background-color: var(--box1-color);
+    border: 1px solid --box1-color;
+    color: hsl(0, 100%, 67%);
+    
+}
+/*Memory box*/
+.box-2 {
+    border: 1px solid var(--box2-color);
+    background-color: var(--box2-color);
+    color: hsl(39, 100%, 56%);
+}
+
+/*verbal box*/
+.box-3 {
+    background-color: var(--box3-color);
+    color:hsl(166, 100%, 37%);
+}
+/*visual box*/
+.box-4 {
+    background-color: var(--box4-color);
+    color: hsl(234, 85%, 45%);
+}
+button {
+    border-radius: 30px;
+    margin-left: 23px;
+    margin-top: 28px;
+    height: 50px;
+    width: 240px;
+    background-color: var(--primary-color);
+    font-size: 15px;
+    color: white;
+    border: none;
+    font-weight: 500;
+}
+button:hover {
+    background-color: #303B59;
+    cursor: pointer;
+    transition: 0.3s;
+}
