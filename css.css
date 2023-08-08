@@ -22,13 +22,28 @@
     position: absolute;
   top: 20%;
   left: 20%;
-    border-radius: 20px;
+   border-radius: 30px;
     border: 1px solid rgb(251, 251, 251);
     height: 400px;
     width: 600px;
     box-shadow: 1px 1px 24px 4px rgba(56,81,120,0.27);
 -webkit-box-shadow: 1px 1px 24px 4px rgba(56,81,120,0.27);
 -moz-box-shadow: 1px 1px 24px 4px rgba(56,81,120,0.27);
+display: flex;
+}
+/*.card {
+    height:400px ;
+    width: 300px;
+    background-color: rgb(106, 49, 49);
+    
+}*/
+@media screen and (max-width:375px) {
+    .grid-container {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 300px;
+    }
 }
 .grid-results {
     border: 1px solid --primary-color;
@@ -40,6 +55,7 @@ background: linear-gradient(180deg, rgba(115,106,255,1) 1%, rgba(58,46,254,1) 55
     text-align: center;
     
 }
+
 #header {
     color: #CCC6FF;
     text-align: center;
@@ -89,6 +105,7 @@ h3{
     font-size: 18px;
     padding-left: 20px;
     font-weight: 500;
+    margin-top: 0;
 }
 .box {
     margin-left: 23px;
@@ -108,14 +125,16 @@ h3{
 .words {
     display: contents;
     font-size: 14px;
-    position: relative;
     font-weight: 600;
-    padding: 0;
+    
 }
 
 .detailed-result {  
     font-size: 14px;
-    display: contents;
+    display: inherit;
+    text-align: end;
+    padding-bottom: 3px;
+    display: inline-block;
     
 }
 .score {
